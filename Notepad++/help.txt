@@ -1,0 +1,463 @@
+application development V7210001  - use this
+application support V7428001
+Rabbit@123
+Jogfalls@123 - mailbox
+
+NOTE: The following lines could not be updated because of API Failure to update these records. Please contact your system adminstrator for explanation on the cause of error. 
+
+PO Num    PO LIne Num   Release Num Shipment Num
+-------   -----------   ----------- ------------
+
+
+
+11.5.10: How To Generate Debug Log Files for Oracle iStore? [ID 207262.1]
+How to customize the address search functionality (ship-to and bill-to) to include other criterias [ID 737810.1]
+
+ID 452496.1 - web services note
+
+muralikrishna.ramdas@mail.mobistar.be
+ln -s $FND_TOP/bin/fndcpesr MOBSORESCHEMAIL
+ln -s $FND_TOP/bin/fndcpesr test_email
+outlook:
+========
+Mobistar - Durgaa@123
+
+Citrix:
+=========
+user:u0147042
+Password: Parrot@123
+
+UAT:
+===
+user:u0147041
+Password: test123
+
+Putty:
+======
+user:u0147042
+sshgateway.ux.mobistar.be
+ace8net
+u0147042@bangalore:/usr/app/u0147042 # sudo su - appld01
+sudo su - appli01
+
+sudo su - applmgr
+===============
+u0147047
+pwd - mobistar1
+===============
+adident XXMOBHeader MOBOEINVVP.rdf
+adident XXMOBHeader MOBARDLP.rdf
+
+Sanju@123
+
+srikanth.sudheendra@mail.mobistar.be 
+
+BJitQJUl
+
+
+
+transfer directory:
+==================
+/usr/app/u0147042/transfer/
+
+ /usr/app/appld01/11.5/find01appl/fnd/11.5.0/bin/fndcpesr
+
+/usr/app/appld01/11.5/find01appl/xxmob/1.0.1/int/PR_UPLOAD/in
+
+/usr/app/u0147047/transfer/
+
+Front End:
+==========
+DEV1:
+=====
+
+sysadmin
+--kejnies248
+kejnies258
+
+
+muralikrishna.ramdas@mail.mobistar.be
+
+Metaling:
+Srikanth.sudheendra@mail.mobistar.be\BJitQJUl
+INT:
+======
+chariharan
+welcome02
+
+MOB_UNP_DEP_INT -- request set
+MOBUNPLDDEPUPLOAD -- upload
+MOBFAUNPDEPPCK  -- validation
+MOBFAUNPDEPPCKAPI -- exe
+FND LOAD:
+=======
+FNDLOAD apps/Tieene58 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_FA_VALID.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBFAUNPDEPPCK"
+FNDLOAD apps/Tieene58 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_FA_REQUEST.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOB_UNP_DEP_INT"
+FNDLOAD apps/Tieene58 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_FA_EXECUTE.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBFAUNPDEPPCKAPI"
+FNDLOAD apps/Tieene58 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_FA_DEP_UPLOAD.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBUNPLDDEPUPLOAD"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBRESCHEDULEUPD.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBSORESCHEDULE"
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBRESCHEDULEUPD.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBSORESCHEDULE"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBRESCHEDULEVALID.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBRESCHEDVALID"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBRESCHEDULEXEC.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBRESCHEXEC"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBRESCHEDULREP.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBRESCHREP"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOBSORESCHEMAIL.ldt PROGRAM APPLICATION_SHORT_NAME="XXMOB" CONCURRENT_PROGRAM_NAME="MOBRESCHSE"
+
+FNDLOAD apps/catastro345 0 Y DOWNLOAD $FND_TOP/patch/115/import/afcprset.lct MOBSORESCHEDULERS.ldt REQ_SET_LINKS REQUEST_SET_NAME="MOBSORESCH"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afscprof.lct MOBSUPCHAINEMAIL.ldt PROFILE PROFILE_NAME="MOB_SUPPLYCHAIN_OPER_EMAIL" APPLICATION_SHORT_NAME="XXMOB"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpreqg.lct MOBSORESCHEDULESCMRG.ldt REQUEST_GROUP REQUEST_GROUP_NAME="Vendor Mgt Mproducts (SOX)" APPLICATION_SHORT_NAME="XXMOB" REQUEST_GROUP_UNIT UNIT_NAME="MOBSORESCH"
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpreqg.lct MOBSORESCHEDULEORDRG.ldt REQUEST_GROUP REQUEST_GROUP_NAME="OM Concurrent Programs" APPLICATION_SHORT_NAME="ONT" REQUEST_GROUP_UNIT UNIT_NAME="MOBSORESCH"
+===================
+
+$FND_TOP/bin/FNDLOAD  apps/Tieene58 O Y UPLOAD $FND_TOP/patch/115/import/afcpreqg.lct MOBSORESCHEDULESCMRG.ldt - CUSTOM_MODE=FORCE
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_REQIMPORA_PRG4.ldt PROGRAM APPLICATION_SHORT_NAME="PO" CONCURRENT_PROGRAM_NAME="MOBREQIMPORT"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_CREATE_REL_PRG5.ldt PROGRAM APPLICATION_SHORT_NAME="PO" CONCURRENT_PROGRAM_NAME="PORELGEN"
+
+FNDLOAD apps/catastro345 O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_REQ_INT_PRG6.ldt PROGRAM APPLICATION_SHORT_NAME="PO" CONCURRENT_PROGRAM_NAME="MOBREQINT"
+
+FNDLOAD apps/catastro345 0 Y DOWNLOAD $FND_TOP/patch/115/import/afcprset.lct MOB_REQUISITION_REQ_SET_LINK.ldt REQ_SET_LINKS REQUEST_SET_NAME="MOBREQINT"
+
+FNDLOAD apps/condeint135 0 Y UPLOAD $FND_TOP/patch/115/import/afscprof.lct MOBSUPCHAINEMAIL.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+FNDLOAD apps/condeuat37 0 Y UPLOAD $FND_TOP/patch/115/import/afcprset.lct MOB_REQUISITION_REQ_SET_LINK.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+FNDLOAD apps/condeuat37 O Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_REQIMP_PRG3.ldt - WARNINGS=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+FNDLOAD apps/condeuat37 O Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_REQIMPORA_PRG4.ldt - WARNINGS=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+FNDLOAD apps/condeuat37 O Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct MOB_CREATE_REL_PRG5.ldt - WARNINGS=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+FNDLOAD apps/condeint135 O Y DOWNLOAD $FND_TOP/patch/115/import/afscprof.lct REQIMP_AUTORELEASE.ldt PROFILE PROFILE_NAME="REQIMP_AUTORELEASE" APPLICATION_SHORT_NAME="PO"
+
+FNDLOAD apps/condeint135 O Y UPLOAD $FND_TOP/patch/115/import/afscprof.lct REQIMP_AUTORELEASE.ldt - WARNINGS=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+
+
+Lookup:
+=======
+FNDLOAD apps/catastro345 0 Y DOWNLOAD $FND_TOP/patch/115/import/aflvmlu.lct XXMOB_OSS_MOBIFIC.ldt FND_LOOKUP_TYPE APPLICATION_SHORT_NAME ="XXMOB" LOOKUP_TYPE="XXMOB_OSS_MOBIFIC"
+
+
+FNDLOAD apps/Tieene58 O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct /usr/app/u0147047/transfer/XXMOB_OSS_MOBIFIC.ldt
+
+
+Custom.pll:
+==========
+f60gen module=CUSTOM.pll userid=APPS/catastro345 module_type=library batch=no compile_all=special
+
+f60gen userid=apps/Tieene58 module=FNDATTCH.fmb module_type=FORM compile_all=YES
+
+cp /usr/app/u0147047/transfer/FNDATTCH.fmb .
+
+
+f60gen userid=apps/catastro345 module=$c_MARKVIEW_TOP/forms/US/FNDATTCH.fmb module_type=FORM compile_all=YES
+
+f60gen userid=apps/condeint135 module=MOBRECMT.fmb module_type=FORM compile_all=YES
+
+
+
+===================================================================
+MOB Requisitions Interface (Request Set MOB Requisitions Interface)
+MOB Load Requisitions File
+MOB Validate Requisitions
+MOB Requisition Import
+Requisition Import (Oracle)
+Create Releases
+
+File Name
+MOB_REQ_FILE_NAME Constant XXX_PR_YYYYMMDDHHMM.csv
+======================================================================
+
+MOB OSS: Mercator Interface
+
+po_relgen_pkg.pre_approval_check
+
+PO Blanket report issue:
+========================
+
+SELECT e.sql_text,OBJECT_NAME,
+c.SID
+FROM apps.DBA_OBJECTS a 
+    , apps.v$locked_object b
+	, apps.v$lock c
+	,apps.v$session d
+	,apps.v$sql e
+WHERE c.LMODE = 6
+AND c.SID = b.SESSION_ID
+and d.sql_id =e.sql_id
+and d.sid = c.sid
+AND b.OBJECT_ID = a.OBJECT_ID;
+
+
+ar60runb \
+userid=apps/Breidi011 \
+TRACEOPTS=TRACE_ALL \
+TRACEFILE=/tmp/test32.log \
+P_CONC_REQUEST_ID=27797385 \
+P_ORDER_NUMBER='258067' \
+P_LINE_NUMBER=4 \
+report=$XXMOB_TOP/reports/US/MOB_XMLPUB_FPCVSH.rdf \
+batch=yes \
+destype=file \
+desname=/tmp/o277973851.out
+
+
+
+ar60runb \
+userid=apps/Breidi011 \
+TRACEOPTS=TRACE_ALL \
+TRACEFILE=/tmp/test32.log \
+P_CONC_REQUEST_ID=27797388 \
+p_delivery_id_low='12920617' \
+p_delivery_id_high='12920617' \
+p_sob_id='43' \
+p_organization_id='328' \
+report=$XXMOB_TOP/reports/US/mob_generate_dcn.rdf \
+batch=yes \
+destype=file \
+desname=/tmp/o27797388.out
+
+
+
+
+alter system kill session '1491,4761' (SID, serial number from V$session)
+========================================================
+
+SELECT                     
+
+
+SELECT fdst.short_text
+         FROM fnd_documents_short_text fdst,
+              fnd_attached_docs_form_vl fadfv,
+              fnd_attached_documents fad
+        WHERE fdst.media_id=fadfv.media_id
+          AND fad.document_id=fadfv.document_id
+          AND fad.attached_document_id=fadfv.attached_document_id
+          AND fadfv.category_description='To Supplier'
+          AND fadfv.datatype_name = 'Short Text'
+          AND fadfv.function_name='PO_POXPOEPO'
+          AND (fad.entity_name = 'PO_HEADERS' )
+          AND fad.pk1_value=410966 
+          AND fad.seq_num = (SELECT max(fad1.seq_num) -- Added by prabhakar for PFAT 33220 and 33221
+         FROM fnd_documents_short_text fdst1,
+              fnd_attached_docs_form_vl fadfv1,
+              fnd_attached_documents fad1
+        WHERE fdst1.media_id=fadfv1.media_id
+        AND rownum = 1
+          AND fad1.document_id=fadfv1.document_id
+          AND fad1.attached_document_id=fadfv1.attached_document_id
+          AND fadfv1.category_description='To Supplier'
+          AND fadfv1.datatype_name = 'Short Text'
+          AND fadfv1.function_name='PO_POXPOEPO'
+          AND (fad1.entity_name = 'PO_HEADERS' )
+          AND (fad1.pk1_value=410966 ))
+UNION ALL
+SELECT fdst.short_text
+         FROM fnd_documents_short_text fdst,
+              fnd_attached_docs_form_vl fadfv,
+              fnd_attached_documents fad
+        WHERE fdst.media_id=fadfv.media_id
+          AND rownum = 1
+          AND fad.document_id=fadfv.document_id
+          AND fad.attached_document_id=fadfv.attached_document_id
+          AND fadfv.category_description='To Supplier'
+          AND fadfv.datatype_name = 'Short Text'
+          AND fadfv.function_name='PO_POXPOEPO'
+          AND  (fad.entity_name = 'PO_RELEASES' )
+          AND  fad.pk1_value=301
+          AND fad.seq_num = (SELECT max(fad1.seq_num) -- Added by prabhakar for PFAT 33220 and 33221
+         FROM fnd_documents_short_text fdst1,
+              fnd_attached_docs_form_vl fadfv1,
+              fnd_attached_documents fad1
+        WHERE fdst1.media_id=fadfv1.media_id
+          AND fad1.document_id=fadfv1.document_id
+          AND fad1.attached_document_id=fadfv1.attached_document_id
+          AND fadfv1.category_description='To Supplier'
+          AND fadfv1.datatype_name = 'Short Text'
+          AND fadfv1.function_name='PO_POXPOEPO'
+          AND (fad1.entity_name = 'PO_RELEASES' )
+          AND  fad1.pk1_value=301)
+
+
+--(SELECT max(fad1.seq_num)
+--                               FROM fnd_attached_documents fad1
+--                            WHERE  (fad1.entity_name = 'PO_HEADERS' OR (fad1.entity_name = 'PO_RELEASES' AND por.po_release_id IS NOT NULL))
+--                              AND (fad1.pk1_value = poh.po_header_id OR fad1.pk1_value =por.po_release_id)
+--                             -- AND fad1.pk1_value = fad.pk1_value        --Divyendu-Added to improve performance
+--                              AND fad1.document_id = fad1.document_id)    --Divyendu-Added to improve performance
+--                             -- AND fad1.entity_name = fad.entity_name)   --Divyendu-Added to improve performance
+       )                                  poh_add_terms_condition    --Octop00000158:Changed for CTR 32427 by Ravi on 27-May-10
+
+
+
+SELECT poh.po_header_id,por.po_release_id
+FROM   mob_po_headers_print                    poh
+    --   ,po_releases                         por
+    ,(select r.* from po_releases_all r
+union all
+select r.* from po_releases_all r,
+(select -1 x from dual) d
+where d.x = r.po_header_id(+)) por
+--> added by Mobistar
+,      po_vendor_sites                     vns
+,      po_headers                          poha
+,      per_people_f                        peo
+,      per_people_f                        peo2
+,      hr_locations                        loc
+,      fnd_lookup_values_vl                flv_gpc
+--<
+WHERE  1=1
+--AND    poh.po_release_id           = por.po_release_id(+)
+AND    (poh.po_header_id= por.po_header_id or por.po_header_id is null)
+--
+--AND    (   nvl(por.release_num,-1)
+--           BETWEEN nvl(:P_release_num_from,nvl(por.release_num,-1))
+--           AND     nvl(:P_release_num_to,nvl(por.release_num,-1))
+--       OR poh.po_type != 'RELEASE'
+--       )
+AND    poh.po_type != 'RELEASE'
+--
+--
+--
+AND    NVL(poh.consigned_consumption_flag, 'N') <> 'Y'
+--AND    NVL(por.consigned_consumption_flag, 'N') <> 'Y'
+--
+--> added by Mobistar
+AND    poh.ship_to_location_id     = loc.location_id
+AND    vns.vendor_site_id          = poh.vendor_site_id
+--
+AND    poha.po_header_id           = poh.po_header_id
+AND    poha.type_lookup_code       = poh.po_type
+--AND    poh.document_buyer_agent_id = peo2.person_id
+AND    poh.document_approved_by    = peo2.person_id
+-- SVL(12-JUN-03)
+AND    peo2.effective_start_date  <= poh.creation_date
+AND    peo2.effective_end_date    >= poh.creation_date
+AND    peo.effective_start_date   <= poh.creation_date
+AND    peo.effective_end_date     >= poh.creation_date
+-- end SVL(12-JUN-03)
+-- Get Redactor Information
+AND ((peo.person_id = (SELECT pod.deliver_to_person_id
+                         FROM po_distributions_all pod
+                        WHERE pod.po_header_id = poha.po_header_id
+                          AND ROWNUM < 2)
+                          AND poh.po_type = 'STANDARD') --Added on 09-JUN-10 for CTR 32427 by Ravi
+OR
+(poh.po_type IN ('BLANKET','CONTRACT') AND peo.person_id = poha.agent_id AND por.po_release_id is null)  --Added on 09-JUN-10 for CTR 32427 by Ravi
+-- CTR4722
+OR
+(peo.person_id= (SELECT pod.deliver_to_person_id
+                         FROM   po_distributions_all pod,po_line_locations_release_v plr
+                         WHERE  pod.po_header_id = poh.po_header_id
+                         AND    pod.line_location_id = plr.line_location_id
+                         AND    plr.po_release_id    = por.po_release_id  -- Added to fix Integration defect
+                         AND    ROWNUM < 2)
+    AND por.po_release_id is not null))
+AND    flv_gpc.lookup_type(+)      = 'XXMOB_MOBPONOGPC_MOB'
+AND    flv_gpc.lookup_code(+)      = poh.vendor_num
+AND poh.po_type IN('STANDARD','BLANKET','CONTRACT')
+AND poh.po_header_id = 410966
+
+
+
+
+select * from po_headers_all where po_header_id = 301
+
+License key: HHGB3-TQWG2-HFYG9-DVMPM-37WBJ 
+
+STD_PR_201111021225.csv
+
+test for First approver not active as fnd user 	1                                     	REFBTO 	 	 	06010011 	 	P 	 	326                                   	STD_PR_201111021225.csv
+test for First approver not active as fnd user 	2                                     	REFBTS 	 	 	06010011 	 	P 	 	326                                   	STD_PR_201111021225.csv
+
+select SUM(pla.unit_price * mris.quantity) from mob_req_import_stg mris
+              ,po_headers_all pha
+              ,po_lines_all pla
+WHERE pha.po_header_id = pla.po_header_id
+AND  pha.segment1 = mris.bpa_number
+AND pla.line_num = mris.pr_line_number
+AND mris.bpa_number = '11109868'
+AND mris.pr_line_number = 1
+
+select sum(quantity * unit_price) amount_released_hdr 
+from PO_LINE_LOCATIONS_RELEASE_V pllrv
+     ,po_headers_all pha
+where pllrv.po_header_id = pha.po_header_id
+ AND pha.segment1 = '11109868'
+
+select BLANKET_TOTAL_AMOUNT amt_agreed_hdr,min_release_amount min_release_hdr from po_headers_all where segment1 = '11109868'
+
+
+
+select sum(pllrv.quantity * pllrv.unit_price) amount_released_line 
+from PO_LINE_LOCATIONS_RELEASE_V pllrv
+     ,po_headers_all pha
+     ,po_lines_all pla
+where pllrv.po_header_id = pha.po_header_id 
+AND pha.po_header_id = pla.po_header_id
+AND pllrv.po_line_id = pla.po_line_id
+AND pha.segment1 = '11109868'
+AND pla.line_num = 1
+
+select pla.committed_amount amount_agreed_line,pla.min_release_amount min_release_line
+from po_lines_all pla
+     ,po_headers_all pha
+where pla.po_header_id = pha.po_header_id
+AND pla.line_num = 1
+AND pha.segment1 = '11109868'
+
+
+
+
+select * from po_lines_all where po_header_id=409160
+==================================================================
+
+0986199875100
+
+insert into mob.mob_pds_serial_map_det
+values (16266901,7999,523,101,'9025857',39095,'823312724900','9033688',50716,'0986199875101',null,'C',null,null,sysdate,0,sysdate,0,null,2559999,null,null,null)
+
+insert into mob.mob_pds_serial_map_det
+values (16266903,7999,523,101,'9025857',39095,'823312724901','9031247',47003,'0986199875102',null,'C',null,null,sysdate,0,sysdate,0,null,2559999,null,null,null)
+
+====================================================================
+MOB NOS Reference Status Report
+ 
+MOB Order Acknowledgement
+
+Recomplie:
+===============
+UAT:
+====
+sudo su - oracle
+choose the instance name
+cd $ORACLE_HOME
+cd rdbms/admin
+sqlplus '/as sysdba'
+SQL> @utlrp.sql;
+
+INT01:
+=======
+server name: hadar
+
+UAT01:
+=======
+server name: calcutta
+
+ 
+
+
+
+
+
+
+
+
+
